@@ -16,6 +16,27 @@
 
 <p class="govuk-body">This is page {{data.something}}</p>
 
+<p class="govuk-body">Event Name = {{data.eventName}}</p>
+
+ <form  method="post" novalidate>
+
+{{ govukInput({
+  label: {
+    text: "What is the name of the event?",
+    classes: "govuk-label--l",
+    isPageHeading: true
+  },
+  id: "event-name",
+  name: "eventName"
+}) }}
+
+{{ govukButton({
+          text: "Continue"
+        }) }}
+
+</form>
+
+
 {% for i in data.LotsOfData %}
 {{i.test | uppercase}}<br><br>
 {% endfor %}
