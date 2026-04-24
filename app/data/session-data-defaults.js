@@ -3,7 +3,7 @@ module.exports = {
   // Insert values here
 
 "something":"not-set",
-
+"eventName": "not-set",
 
 "LotsOfData":  [
   { "test": "test" },

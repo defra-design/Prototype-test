@@ -27,6 +27,6 @@ router.post('/form-handler', function(req, res) {
     })
 
 router.post('/page-3', function(req, res) {
-    
-    res.redirect("page-3")
+
+    res.redirect("page-1")
     })
