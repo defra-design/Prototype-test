@@ -15,6 +15,44 @@
 
 <p class="govuk-body">This is page {{data.something}}</p>
 
+
+ <form action="/form-handler" method="post" novalidate>
+
+{{ govukRadios({
+  name: "pageNumber",
+  fieldset: {
+    legend: {
+      text: "Choose the page number?",
+      isPageHeading: true,
+      classes: "govuk-fieldset__legend--l"
+    }
+  },
+  items: [
+    {
+      value: "0",
+      text: "Index"
+    },
+    {
+      value: "1",
+      text: "Page 1"
+    },
+    {
+      value: "2",
+      text: "Page 2"
+    },
+    {
+      value: "3",
+      text: "Page 3"
+    }
+  ]
+}) }}
+
+{{ govukButton({
+          text: "Continue"
+        }) }}
+
+</form>
+
   </div>
 </div>
 
