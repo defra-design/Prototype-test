@@ -1,0 +1,9 @@
+{
+  "serviceName": "This is a test",
+  "useServiceNavigation": true,
+  "plugins": {
+    "govuk-frontend": {
+      "rebrand": true
+    }
+  }
+}
